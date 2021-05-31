@@ -6,6 +6,7 @@ import { PropertyListComponent } from './property/property-list/property-list.co
 import {PropertyCardComponent} from './property/property-card/property-card.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HousingService } from './services/housing.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     NgbModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [HousingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
