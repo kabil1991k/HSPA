@@ -10,7 +10,5 @@ export class HousingService {
   getAllproperties()
   {
     return this.http.get('data/properties.json');
-     
-  
   }
 }
